@@ -1,5 +1,5 @@
 name: Build & Deploy
-on: [push, workflow_run]
+on: [push]
 
 env:
   SCRVER: ${{ github.sha }}
