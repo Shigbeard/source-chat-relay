@@ -28,7 +28,7 @@ jobs:
       - name: Install NodeJS
         uses: actions/setup-node@v1
         with:
-          node-version: "14.x"
+          node-version: "16.x"
 
       - name: Export bin paths
         run: |
@@ -38,8 +38,7 @@ jobs:
           mkdir -p $(go env GOPATH)/bin
 
       - name: Install PostCSS CLI
-        # run: npm i -g postcss-cli
-        run: yarn i -g postcss-cli
+        run: npm i -g postcss-cli
 
       - name: Install Golang Dep
         run: curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
