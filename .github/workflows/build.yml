@@ -23,7 +23,7 @@ jobs:
       - name: Install Golang
         uses: actions/setup-go@v1
         with:
-          go-version: "1.14.x"
+          go-version: "1.17.x"
 
       - name: Install NodeJS
         uses: actions/setup-node@v1
