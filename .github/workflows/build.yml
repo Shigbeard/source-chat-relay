@@ -23,7 +23,7 @@ jobs:
       - name: Install Golang
         uses: actions/setup-go@v1
         with:
-          go-version: "1.12.x"
+          go-version: "1.14.x"
 
       - name: Install NodeJS
         uses: actions/setup-node@v1
@@ -142,7 +142,7 @@ jobs:
           path: build/
   doc:
     name: Build Documentation
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout source
