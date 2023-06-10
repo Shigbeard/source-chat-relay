@@ -6,6 +6,7 @@ env:
 
 jobs:
   server:
+    name: Build Server
     runs-on: self-hosted
 
     env:
