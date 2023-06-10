@@ -32,6 +32,11 @@ func Auth(fn exrouter.HandlerFunc) exrouter.HandlerFunc {
 			return
 		}
 
-		ctx.Reply("You do not have permission to use this command")
+		ctx.Set("member", member)
+		ctx.Set("guild", guild)
+
+		fn(ctx)
+
+		return
 	}
 }
